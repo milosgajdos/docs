@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `photon` official image](https://hub.docker.com/_/photon) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,10 +26,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0`, `4.0-20220128`, `latest`](https://github.com/vmware/photon-docker-image/blob/8afc93f902c5f7adb9e962e27af6c3036e0b8610/docker/Dockerfile)
--	[`3.0`, `3.0-20220128`](https://github.com/vmware/photon-docker-image/blob/bc5831f060bc7ec60baa821b39af6b7f641ed935/docker/Dockerfile)
--	[`1.0`, `1.0-20220204`](https://github.com/vmware/photon-docker-image/blob/aff3d2c827e9245fc28921860f457d8df0e1f205/docker/Dockerfile)
--	[`2.0`, `2.0-20220204`](https://github.com/vmware/photon-docker-image/blob/367b8a26f71905d041460d2920e4830eba8201f8/docker/Dockerfile)
+-	[`4.0`, `4.0-20220128`, `latest`](https://github.com/vmware/photon-docker-image/blob/8979d23125de8861e04bfba3fb8b8b246090d1d7/docker/Dockerfile)
+-	[`3.0`, `3.0-20220128`](https://github.com/vmware/photon-docker-image/blob/d433df59098a07854c31c182b823dac5dee98dc6/docker/Dockerfile)
+
+[![arm64v8/photon build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/photon.svg?label=arm64v8/photon%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/photon/)
 
 # Quick reference (cont.)
 
@@ -60,7 +62,7 @@ See the [FAQ](http://vmware.github.io/photon/assets/files/photon_faqs.pdf) for m
 
 ## How to use these images
 
-Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0GA as the base of an image, specify `FROM photon:1.0GA`.
+Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0GA as the base of an image, specify `FROM arm64v8/photon:1.0GA`.
 
 ## Support
 
